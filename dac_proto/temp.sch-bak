@@ -1,0 +1,989 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 2 4
+Title "Prototype current sources"
+Date "2020-01-25"
+Rev "1"
+Comp "NIST"
+Comment1 "325 Broadway"
+Comment2 "Boulder, C0 80305"
+Comment3 "303-497-3148"
+Comment4 "saewoo@gmail.com"
+$EndDescr
+$Sheet
+S 7000 2950 1100 450 
+U 5E20A416
+F0 "Sheet5E20A415" 50
+F1 "channel.sch" 50
+F2 "Vp_in" I R 8100 3000 50 
+F3 "gnd" I R 8100 3100 50 
+F4 "Iout" O R 8100 3350 50 
+F5 "Vin" I L 7000 3150 50 
+F6 "Vm_in" I R 8100 3200 50 
+F7 "offset" I L 7000 3350 50 
+$EndSheet
+$Sheet
+S 6850 4400 1250 500 
+U 5E2E8267
+F0 "Sheet5E2E8266" 50
+F1 "channel_v2.sch" 50
+F2 "Vp_in" I R 8100 4500 50 
+F3 "gnd" I R 8100 4600 50 
+F4 "Iout" O R 8100 4800 50 
+F5 "Vin" I L 6850 4650 50 
+F6 "Vm_in" I R 8100 4700 50 
+F7 "offset" I L 6850 4800 50 
+$EndSheet
+$Comp
+L Regulator_Linear:LT3045xMSE U?
+U 1 1 5E23FF6B
+P 5000 3500
+F 0 "U?" H 5000 3867 50  0000 C CNN
+F 1 "LT3045xMSE" H 5000 3776 50  0000 C CNN
+F 2 "Package_SO:MSOP-12-1EP_3x4mm_P0.65mm_EP1.65x2.85mm" H 5000 3825 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3045fa.pdf" H 5000 3500 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "MFR"
+F 5 "LT3045EMSE" H 0   0   50  0001 C CNN "MPN"
+F 6 "-" H 0   0   50  0001 C CNN "SPR"
+F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    5000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L 0my_power:LT3094xMSE U?
+U 1 1 5E243CFA
+P 4950 4850
+F 0 "U?" H 4950 5217 50  0000 C CNN
+F 1 "LT3094xMSE" H 4950 5126 50  0000 C CNN
+F 2 "Package_SO:MSOP-12-1EP_3x4mm_P0.65mm_EP1.65x2.85mm" H 4950 5175 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/3045fa.pdf" H 4950 4850 50  0001 C CNN
+F 4 "-" H 0   0   50  0001 C CNN "MFR"
+F 5 "LT3094EMSE" H 0   0   50  0001 C CNN "MPN"
+F 6 "-" H 0   0   50  0001 C CNN "SPR"
+F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    4950 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:EMI_Filter_C C?
+U 1 1 5E2D1511
+P 5900 3500
+F 0 "C?" H 5900 3805 50  0000 C CNN
+F 1 "NFM21PS106B0J3D" H 5900 3714 50  0000 C CNN
+F 2 "0my_footprints:NFM21PS106B0J3D_v2" V 5900 3500 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 5900 3500 50  0001 C CNN
+F 4 "murata" H 0   0   50  0001 C CNN "MFR"
+F 5 "NFM21PS106B0J3D" H 0   0   50  0001 C CNN "MPN"
+F 6 "-" H 0   0   50  0001 C CNN "SPR"
+F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    5900 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:EMI_Filter_C C?
+U 1 1 5E2D2776
+P 4050 3500
+F 0 "C?" H 4050 3805 50  0000 C CNN
+F 1 "NFM21PS106B0J3D" H 4050 3714 50  0000 C CNN
+F 2 "0my_footprints:NFM21PS106B0J3D_v2" V 4050 3500 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 4050 3500 50  0001 C CNN
+F 4 "murata" H 0   0   50  0001 C CNN "MFR"
+F 5 "NFM21PS106B0J3D" H 0   0   50  0001 C CNN "MPN"
+F 6 "-" H 0   0   50  0001 C CNN "SPR"
+F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    4050 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:EMI_Filter_C C?
+U 1 1 5E2D3189
+P 4150 4850
+F 0 "C?" H 4150 5155 50  0000 C CNN
+F 1 "NFM21PS106B0J3D" H 4150 5064 50  0000 C CNN
+F 2 "0my_footprints:NFM21PS106B0J3D_v2" V 4150 4850 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 4150 4850 50  0001 C CNN
+F 4 "murata" H 0   0   50  0001 C CNN "MFR"
+F 5 "NFM21PS106B0J3D" H 0   0   50  0001 C CNN "MPN"
+F 6 "-" H 0   0   50  0001 C CNN "SPR"
+F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    4150 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:EMI_Filter_C C?
+U 1 1 5E2D39EA
+P 5900 4850
+F 0 "C?" H 5900 5155 50  0000 C CNN
+F 1 "NFM21PS106B0J3D" H 5900 5064 50  0000 C CNN
+F 2 "0my_footprints:NFM21PS106B0J3D_v2" V 5900 4850 50  0001 C CNN
+F 3 "http://www.murata.com/~/media/webrenewal/support/library/catalog/products/emc/emifil/c31e.ashx?la=en-gb" V 5900 4850 50  0001 C CNN
+F 4 "murata" H 0   0   50  0001 C CNN "MFR"
+F 5 "NFM21PS106B0J3D" H 0   0   50  0001 C CNN "MPN"
+F 6 "-" H 0   0   50  0001 C CNN "SPR"
+F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    5900 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E2D4609
+P 4150 5050
+F 0 "#PWR?" H 4150 4800 50  0001 C CNN
+F 1 "GND" H 4155 4877 50  0000 C CNN
+F 2 "" H 4150 5050 50  0001 C CNN
+F 3 "" H 4150 5050 50  0001 C CNN
+	1    4150 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E2D5194
+P 5900 4950
+F 0 "#PWR?" H 5900 4700 50  0001 C CNN
+F 1 "GND" H 5905 4777 50  0000 C CNN
+F 2 "" H 5900 4950 50  0001 C CNN
+F 3 "" H 5900 4950 50  0001 C CNN
+	1    5900 4950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E2D57FF
+P 4950 5300
+F 0 "#PWR?" H 4950 5050 50  0001 C CNN
+F 1 "GND" H 4955 5127 50  0000 C CNN
+F 2 "" H 4950 5300 50  0001 C CNN
+F 3 "" H 4950 5300 50  0001 C CNN
+	1    4950 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E2D5DE4
+P 4400 5450
+F 0 "C?" H 4515 5496 50  0000 L CNN
+F 1 "1.0uF 16V X7R 0603" H 4515 5405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4438 5300 50  0001 C CNN
+F 3 "~" H 4400 5450 50  0001 C CNN
+F 4 "Samsung" H 0   0   50  0001 C CNN "MFR"
+F 5 "CC0603KPX7R7BB105 " H 0   0   50  0001 C CNN "MPN"
+F 6 "digikey" H 0   0   50  0001 C CNN "SPR"
+F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    4400 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L OPL_Resistor:SMD-RES-3.3K-1%-1_10W_0603_ R?
+U 1 1 5E2D8975
+P 4250 5450
+F 0 "R?" V 4300 5550 45  0000 R CNN
+F 1 "33.2K" V 4200 5700 45  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4250 5450 40  0001 C CNN
+F 3 "" H 4250 5450 40  0001 C CNN
+F 4 "RC0603FR-0733K2L" H 4280 5600 20  0001 C CNN "MPN"
+F 5 "Yageo" H 0   0   50  0001 C CNN "MFR"
+F 6 "-" H 0   0   50  0001 C CNN "SPR"
+F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    4250 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E2D9991
+P 4400 5700
+F 0 "#PWR?" H 4400 5450 50  0001 C CNN
+F 1 "GND" H 4405 5527 50  0000 C CNN
+F 2 "" H 4400 5700 50  0001 C CNN
+F 3 "" H 4400 5700 50  0001 C CNN
+	1    4400 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E2E214A
+P 4350 3950
+F 0 "C?" H 4465 3996 50  0000 L CNN
+F 1 "1.0uF 16V X7R 0603" H 4465 3905 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4388 3800 50  0001 C CNN
+F 3 "~" H 4350 3950 50  0001 C CNN
+F 4 "Samsung" H 0   0   50  0001 C CNN "MFR"
+F 5 "CC0603KPX7R7BB105 " H 0   0   50  0001 C CNN "MPN"
+F 6 "digikey" H 0   0   50  0001 C CNN "SPR"
+F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    4350 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L OPL_Resistor:SMD-RES-3.3K-1%-1_10W_0603_ R?
+U 1 1 5E2E2151
+P 4200 3950
+F 0 "R?" V 4242 3902 45  0000 R CNN
+F 1 "33.2K" V 4200 4200 45  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 4200 3950 40  0001 C CNN
+F 3 "" H 4200 3950 40  0001 C CNN
+F 4 "RC0603FR-0733K2L" H 4230 4100 20  0001 C CNN "MPN"
+F 5 "Yageo" H 0   0   50  0001 C CNN "MFR"
+F 6 "-" H 0   0   50  0001 C CNN "SPR"
+F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    4200 3950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E2E2157
+P 4350 4200
+F 0 "#PWR?" H 4350 3950 50  0001 C CNN
+F 1 "GND" H 4355 4027 50  0000 C CNN
+F 2 "" H 4350 4200 50  0001 C CNN
+F 3 "" H 4350 4200 50  0001 C CNN
+	1    4350 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E2E5BC0
+P 5000 3900
+F 0 "#PWR?" H 5000 3650 50  0001 C CNN
+F 1 "GND" H 5005 3727 50  0000 C CNN
+F 2 "" H 5000 3900 50  0001 C CNN
+F 3 "" H 5000 3900 50  0001 C CNN
+	1    5000 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E2E5F18
+P 5900 3600
+F 0 "#PWR?" H 5900 3350 50  0001 C CNN
+F 1 "GND" H 5905 3427 50  0000 C CNN
+F 2 "" H 5900 3600 50  0001 C CNN
+F 3 "" H 5900 3600 50  0001 C CNN
+	1    5900 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E2E62CA
+P 4050 3600
+F 0 "#PWR?" H 4050 3350 50  0001 C CNN
+F 1 "GND" H 4055 3427 50  0000 C CNN
+F 2 "" H 4050 3600 50  0001 C CNN
+F 3 "" H 4050 3600 50  0001 C CNN
+	1    4050 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E2E7AEA
+P 6100 4750
+F 0 "#PWR?" H 6100 4600 50  0001 C CNN
+F 1 "+3.3V" H 6115 4923 50  0000 C CNN
+F 2 "" H 6100 4750 50  0001 C CNN
+F 3 "" H 6100 4750 50  0001 C CNN
+	1    6100 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-3V3 #PWR?
+U 1 1 5E2E9686
+P 6100 3400
+F 0 "#PWR?" H 6100 3500 50  0001 C CNN
+F 1 "-3V3" H 6115 3573 50  0000 C CNN
+F 2 "" H 6100 3400 50  0001 C CNN
+F 3 "" H 6100 3400 50  0001 C CNN
+	1    6100 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E2E9DD5
+P 8100 4500
+F 0 "#PWR?" H 8100 4350 50  0001 C CNN
+F 1 "+3.3V" V 8115 4628 50  0000 L CNN
+F 2 "" H 8100 4500 50  0001 C CNN
+F 3 "" H 8100 4500 50  0001 C CNN
+	1    8100 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E2EAD70
+P 8100 3000
+F 0 "#PWR?" H 8100 2850 50  0001 C CNN
+F 1 "+3.3V" V 8115 3128 50  0000 L CNN
+F 2 "" H 8100 3000 50  0001 C CNN
+F 3 "" H 8100 3000 50  0001 C CNN
+	1    8100 3000
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E2EB392
+P 8500 3100
+F 0 "#PWR?" H 8500 2850 50  0001 C CNN
+F 1 "GND" H 8505 2927 50  0000 C CNN
+F 2 "" H 8500 3100 50  0001 C CNN
+F 3 "" H 8500 3100 50  0001 C CNN
+	1    8500 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-3V3 #PWR?
+U 1 1 5E2EBF15
+P 8100 3200
+F 0 "#PWR?" H 8100 3300 50  0001 C CNN
+F 1 "-3V3" V 8115 3328 50  0000 L CNN
+F 2 "" H 8100 3200 50  0001 C CNN
+F 3 "" H 8100 3200 50  0001 C CNN
+	1    8100 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L power:-3V3 #PWR?
+U 1 1 5E2EC662
+P 8100 4700
+F 0 "#PWR?" H 8100 4800 50  0001 C CNN
+F 1 "-3V3" V 8115 4828 50  0000 L CNN
+F 2 "" H 8100 4700 50  0001 C CNN
+F 3 "" H 8100 4700 50  0001 C CNN
+	1    8100 4700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E2ECBEB
+P 8550 4600
+F 0 "#PWR?" H 8550 4350 50  0001 C CNN
+F 1 "GND" H 8555 4427 50  0000 C CNN
+F 2 "" H 8550 4600 50  0001 C CNN
+F 3 "" H 8550 4600 50  0001 C CNN
+	1    8550 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5E2EE8E2
+P 9000 3350
+F 0 "J?" H 9100 3325 50  0000 L CNN
+F 1 "Conn_Coaxial" H 9100 3234 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-10_Vertical" H 9000 3350 50  0001 C CNN
+F 3 " ~" H 9000 3350 50  0001 C CNN
+F 4 "Linx" H 0   0   50  0001 C CNN "MFR"
+F 5 "CONSMA001-SMD-G" H 0   0   50  0001 C CNN "MPN"
+F 6 "-" H 0   0   50  0001 C CNN "SPR"
+F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    9000 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5E2F0F1C
+P 6600 4650
+F 0 "J?" H 6528 4888 50  0000 C CNN
+F 1 "Conn_Coaxial" H 6528 4797 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-10_Vertical" H 6600 4650 50  0001 C CNN
+F 3 " ~" H 6600 4650 50  0001 C CNN
+F 4 "Linx" H 0   0   50  0001 C CNN "MFR"
+F 5 "CONSMA001-SMD-G" H 0   0   50  0001 C CNN "MPN"
+F 6 "-" H 0   0   50  0001 C CNN "SPR"
+F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    6600 4650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5E2F226C
+P 9050 4850
+F 0 "J?" H 9150 4825 50  0000 L CNN
+F 1 "Conn_Coaxial" H 9150 4734 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-10_Vertical" H 9050 4850 50  0001 C CNN
+F 3 " ~" H 9050 4850 50  0001 C CNN
+F 4 "Linx" H 0   0   50  0001 C CNN "MFR"
+F 5 "CONSMA001-SMD-G" H 0   0   50  0001 C CNN "MPN"
+F 6 "-" H 0   0   50  0001 C CNN "SPR"
+F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    9050 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_Coaxial J?
+U 1 1 5E2F361C
+P 6750 3150
+F 0 "J?" H 6678 3388 50  0000 C CNN
+F 1 "Conn_Coaxial" H 6678 3297 50  0000 C CNN
+F 2 "Connector_Coaxial:SMA_Amphenol_132134-10_Vertical" H 6750 3150 50  0001 C CNN
+F 3 " ~" H 6750 3150 50  0001 C CNN
+F 4 "Linx" H 0   0   50  0001 C CNN "MFR"
+F 5 "CONSMA001-SMD-G" H 0   0   50  0001 C CNN "MPN"
+F 6 "-" H 0   0   50  0001 C CNN "SPR"
+F 7 "-" H 0   0   50  0001 C CNN "SPN"
+F 8 "-" H 0   0   50  0001 C CNN "SPURL"
+	1    6750 3150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E2F69A9
+P 9000 3550
+F 0 "#PWR?" H 9000 3300 50  0001 C CNN
+F 1 "GND" H 9005 3377 50  0000 C CNN
+F 2 "" H 9000 3550 50  0001 C CNN
+F 3 "" H 9000 3550 50  0001 C CNN
+	1    9000 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E2F6DD4
+P 6750 3350
+F 0 "#PWR?" H 6750 3100 50  0001 C CNN
+F 1 "GND" H 6755 3177 50  0000 C CNN
+F 2 "" H 6750 3350 50  0001 C CNN
+F 3 "" H 6750 3350 50  0001 C CNN
+	1    6750 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E2F7221
+P 6600 4850
+F 0 "#PWR?" H 6600 4600 50  0001 C CNN
+F 1 "GND" H 6605 4677 50  0000 C CNN
+F 2 "" H 6600 4850 50  0001 C CNN
+F 3 "" H 6600 4850 50  0001 C CNN
+	1    6600 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5E2F7BBF
+P 2450 3400
+F 0 "J?" H 2558 3581 50  0000 C CNN
+F 1 "Phoenix 1711725" H 2558 3490 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal" H 2450 3400 50  0001 C CNN
+F 3 "~" H 2450 3400 50  0001 C CNN
+F 4 "Phoenix" H -750 0   50  0001 C CNN "MFR"
+F 5 "1711725" H -750 0   50  0001 C CNN "MPN"
+F 6 "-" H -750 0   50  0001 C CNN "SPR"
+F 7 "-" H -750 0   50  0001 C CNN "SPN"
+F 8 "-" H -750 0   50  0001 C CNN "SPURL"
+	1    2450 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5E2F8FDB
+P 2400 4750
+F 0 "J?" H 2508 4931 50  0000 C CNN
+F 1 "Phoenix 1711725" H 2508 4840 50  0000 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-3-2-5.08_1x02_P5.08mm_Horizontal" H 2400 4750 50  0001 C CNN
+F 3 "~" H 2400 4750 50  0001 C CNN
+F 4 "Phoenix" H -850 0   50  0001 C CNN "MFR"
+F 5 "1711725" H -850 0   50  0001 C CNN "MPN"
+F 6 "-" H -850 0   50  0001 C CNN "SPR"
+F 7 "-" H -850 0   50  0001 C CNN "SPN"
+F 8 "-" H -850 0   50  0001 C CNN "SPURL"
+	1    2400 4750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E3379D6
+P 9050 5050
+F 0 "#PWR?" H 9050 4800 50  0001 C CNN
+F 1 "GND" H 9055 4877 50  0000 C CNN
+F 2 "" H 9050 5050 50  0001 C CNN
+F 3 "" H 9050 5050 50  0001 C CNN
+	1    9050 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 4750 4450 4750
+Wire Wire Line
+	4450 4750 4450 4850
+Wire Wire Line
+	4450 4850 4550 4850
+Wire Wire Line
+	4350 4750 4450 4750
+Wire Wire Line
+	4550 4950 4150 4950
+Wire Wire Line
+	4150 4950 4150 5050
+Wire Wire Line
+	5350 4750 5500 4750
+Wire Wire Line
+	5350 4850 5500 4850
+Wire Wire Line
+	5500 4850 5500 4750
+Wire Wire Line
+	5500 4750 5700 4750
+Wire Wire Line
+	4250 5600 4400 5600
+Wire Wire Line
+	4400 5600 4400 5700
+Wire Wire Line
+	4250 5300 4300 5300
+Wire Wire Line
+	4550 5050 4300 5050
+Wire Wire Line
+	4300 5050 4300 5300
+Wire Wire Line
+	4300 5300 4400 5300
+Wire Wire Line
+	5600 4550 4450 4550
+Wire Wire Line
+	4450 4550 4450 4750
+Wire Wire Line
+	4200 4100 4350 4100
+Wire Wire Line
+	4350 4100 4350 4200
+Wire Wire Line
+	4200 3800 4350 3800
+Wire Wire Line
+	5700 3400 5500 3400
+Wire Wire Line
+	5400 3500 5500 3500
+Wire Wire Line
+	5500 3500 5500 3400
+Wire Wire Line
+	5500 3400 5400 3400
+Wire Wire Line
+	5600 4550 5600 4950
+Wire Wire Line
+	5600 3700 5600 3600
+Wire Wire Line
+	5600 3050 4500 3050
+Wire Wire Line
+	4500 3050 4500 3400
+Wire Wire Line
+	4500 3400 4600 3400
+Wire Wire Line
+	4500 3400 4500 3500
+Wire Wire Line
+	4500 3500 4600 3500
+Wire Wire Line
+	4250 3400 4500 3400
+Wire Wire Line
+	4600 3600 4050 3600
+Wire Wire Line
+	4600 3700 4350 3700
+Wire Wire Line
+	4350 3700 4350 3800
+Wire Wire Line
+	8550 4600 8100 4600
+Wire Wire Line
+	8100 3100 8500 3100
+Wire Wire Line
+	6950 3150 7000 3150
+Wire Wire Line
+	8800 3350 8100 3350
+Wire Wire Line
+	8850 4850 8250 4850
+Wire Wire Line
+	8250 4850 8250 4800
+Wire Wire Line
+	8250 4800 8100 4800
+Wire Wire Line
+	6850 4650 6800 4650
+Wire Wire Line
+	5350 4950 5600 4950
+Wire Wire Line
+	5600 4950 5600 5050
+Wire Wire Line
+	5400 3600 5600 3600
+Wire Wire Line
+	5600 3600 5600 3050
+Connection ~ 4450 4750
+Connection ~ 4150 4950
+Connection ~ 5500 4750
+Connection ~ 4400 5600
+Connection ~ 4300 5300
+Connection ~ 4350 4100
+Connection ~ 5500 3400
+Connection ~ 4500 3400
+Connection ~ 4050 3600
+Connection ~ 4350 3800
+Connection ~ 5600 4950
+Connection ~ 5600 3600
+NoConn ~ 5350 5050
+NoConn ~ 4550 5150
+NoConn ~ 5400 3700
+$Comp
+L dk_Ferrite-Beads-and-Chips:MPZ2012S601AT000 FB?
+U 1 1 5E3709A1
+P 3100 4750
+F 0 "FB?" H 3100 5037 60  0000 C CNN
+F 1 "MPZ2012S102AT000" H 3100 4931 60  0000 C CNN
+F 2 "digikey-footprints:0805" H 3300 4950 60  0001 L CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/beads_commercial_power_mpz2012_en.pdf" H 3300 5050 60  0001 L CNN
+F 4 "445-5223-1-ND" H 3300 5150 60  0001 L CNN "Digi-Key_PN"
+F 5 "MPZ2012S102AT000" H 3300 5250 60  0001 L CNN "MPN"
+F 6 "Filters" H 3300 5350 60  0001 L CNN "Category"
+F 7 "Ferrite Beads and Chips" H 3300 5450 60  0001 L CNN "Family"
+F 8 "" H 3300 5550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "" H 3300 5650 60  0001 L CNN "DK_Detail_Page"
+F 10 "FERRITE BEAD 1 KOHM 0805 1LN" H 3300 5750 60  0001 L CNN "Description"
+F 11 "TDK Corporation" H 3300 5850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3300 5950 60  0001 L CNN "Status"
+	1    3100 4750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 4750 3500 4750
+Wire Wire Line
+	2900 4750 2600 4750
+$Comp
+L dk_Ferrite-Beads-and-Chips:MPZ2012S601AT000 FB?
+U 1 1 5E3772CA
+P 2850 3400
+F 0 "FB?" H 2850 3687 60  0000 C CNN
+F 1 "MPZ2012S102AT000" H 2850 3581 60  0000 C CNN
+F 2 "digikey-footprints:0805" H 3050 3600 60  0001 L CNN
+F 3 "https://product.tdk.com/info/en/catalog/datasheets/beads_commercial_power_mpz2012_en.pdf" H 3050 3700 60  0001 L CNN
+F 4 "445-5223-1-ND" H 3050 3800 60  0001 L CNN "Digi-Key_PN"
+F 5 "MPZ2012S102AT000" H 3050 3900 60  0001 L CNN "MPN"
+F 6 "Filters" H 3050 4000 60  0001 L CNN "Category"
+F 7 "Ferrite Beads and Chips" H 3050 4100 60  0001 L CNN "Family"
+F 8 "" H 3050 4200 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "" H 3050 4300 60  0001 L CNN "DK_Detail_Page"
+F 10 "FERRITE BEAD 1 KOHM 0805 1LN" H 3050 4400 60  0001 L CNN "Description"
+F 11 "TDK Corporation" H 3050 4500 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3050 4600 60  0001 L CNN "Status"
+	1    2850 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E37ADB6
+P 3050 3550
+F 0 "C?" H 3165 3596 50  0000 L CNN
+F 1 "1.0uF 16V X7R 0603" H 3000 3450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3088 3400 50  0001 C CNN
+F 3 "~" H 3050 3550 50  0001 C CNN
+F 4 "Samsung" H -1350 -1900 50  0001 C CNN "MFR"
+F 5 "CC0603KPX7R7BB105 " H -1350 -1900 50  0001 C CNN "MPN"
+F 6 "digikey" H -1350 -1900 50  0001 C CNN "SPR"
+F 7 "-" H -1350 -1900 50  0001 C CNN "SPN"
+F 8 "-" H -1350 -1900 50  0001 C CNN "SPURL"
+	1    3050 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E37B921
+P 3500 4900
+F 0 "C?" H 3615 4946 50  0000 L CNN
+F 1 "1.0uF 16V X7R 0603" H 2600 4850 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3538 4750 50  0001 C CNN
+F 3 "~" H 3500 4900 50  0001 C CNN
+F 4 "Samsung" H -900 -550 50  0001 C CNN "MFR"
+F 5 "CC0603KPX7R7BB105 " H -900 -550 50  0001 C CNN "MPN"
+F 6 "digikey" H -900 -550 50  0001 C CNN "SPR"
+F 7 "-" H -900 -550 50  0001 C CNN "SPN"
+F 8 "-" H -900 -550 50  0001 C CNN "SPURL"
+	1    3500 4900
+	1    0    0    -1  
+$EndComp
+Connection ~ 3500 4750
+Wire Wire Line
+	3500 4750 3950 4750
+$Comp
+L power:GND #PWR?
+U 1 1 5E37D1D0
+P 2600 4850
+F 0 "#PWR?" H 2600 4600 50  0001 C CNN
+F 1 "GND" H 2605 4677 50  0000 C CNN
+F 2 "" H 2600 4850 50  0001 C CNN
+F 3 "" H 2600 4850 50  0001 C CNN
+	1    2600 4850
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E37DB12
+P 2650 3500
+F 0 "#PWR?" H 2650 3250 50  0001 C CNN
+F 1 "GND" H 2655 3327 50  0000 C CNN
+F 2 "" H 2650 3500 50  0001 C CNN
+F 3 "" H 2650 3500 50  0001 C CNN
+	1    2650 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3050 3400 3850 3400
+Connection ~ 3050 3400
+$Comp
+L Device:R R?
+U 1 1 5E3804CD
+P 3050 3850
+F 0 "R?" H 3120 3896 50  0000 L CNN
+F 1 "2" H 3120 3805 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2980 3850 50  0001 C CNN
+F 3 "~" H 3050 3850 50  0001 C CNN
+	1    3050 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5E3818C6
+P 3500 5200
+F 0 "R?" H 3570 5246 50  0000 L CNN
+F 1 "2" H 3570 5155 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 3430 5200 50  0001 C CNN
+F 3 "~" H 3500 5200 50  0001 C CNN
+	1    3500 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E38250D
+P 3500 5350
+F 0 "#PWR?" H 3500 5100 50  0001 C CNN
+F 1 "GND" H 3505 5177 50  0000 C CNN
+F 2 "" H 3500 5350 50  0001 C CNN
+F 3 "" H 3500 5350 50  0001 C CNN
+	1    3500 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E38292C
+P 3050 4000
+F 0 "#PWR?" H 3050 3750 50  0001 C CNN
+F 1 "GND" H 3055 3827 50  0000 C CNN
+F 2 "" H 3050 4000 50  0001 C CNN
+F 3 "" H 3050 4000 50  0001 C CNN
+	1    3050 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 6700 3350 6700
+$Comp
+L Device:R R?
+U 1 1 5E3459F6
+P 2450 6550
+AR Path="/59ED0E6A/5E3459F6" Ref="R?"  Part="1" 
+AR Path="/59ED3D7B/5E3459F6" Ref="R?"  Part="1" 
+AR Path="/59ED3D94/5E3459F6" Ref="R?"  Part="1" 
+AR Path="/59ED3DAD/5E3459F6" Ref="R?"  Part="1" 
+AR Path="/5E20A416/5E3459F6" Ref="R?"  Part="1" 
+AR Path="/5E3459F6" Ref="R14"  Part="1" 
+AR Path="/5E39C8D9/5E3459F6" Ref="R?"  Part="1" 
+F 0 "R?" V 2530 6550 50  0000 C CNN
+F 1 "1k" V 2450 6550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2380 6550 50  0001 C CNN
+F 3 "" H 2450 6550 50  0001 C CNN
+F 4 "Yageo" H -1600 3300 50  0001 C CNN "MFR"
+F 5 "RC0603FR-071KL" H -1600 3300 50  0001 C CNN "MPN"
+F 6 "" H -1600 3300 50  0001 C CNN "SPR"
+F 7 "" H -1600 3300 50  0001 C CNN "SPN"
+F 8 "-" H -1600 3300 50  0001 C CNN "SPURL"
+	1    2450 6550
+	-1   0    0    1   
+$EndComp
+Connection ~ 2450 6700
+$Comp
+L Device:R R?
+U 1 1 5E345A02
+P 2450 6850
+AR Path="/59ED0E6A/5E345A02" Ref="R?"  Part="1" 
+AR Path="/59ED3D7B/5E345A02" Ref="R?"  Part="1" 
+AR Path="/59ED3D94/5E345A02" Ref="R?"  Part="1" 
+AR Path="/59ED3DAD/5E345A02" Ref="R?"  Part="1" 
+AR Path="/5E20A416/5E345A02" Ref="R?"  Part="1" 
+AR Path="/5E345A02" Ref="R15"  Part="1" 
+AR Path="/5E39C8D9/5E345A02" Ref="R?"  Part="1" 
+F 0 "R?" V 2530 6850 50  0000 C CNN
+F 1 "1k" V 2450 6850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad1.05x0.95mm_HandSolder" V 2380 6850 50  0001 C CNN
+F 3 "" H 2450 6850 50  0001 C CNN
+F 4 "Yageo" H -1600 3600 50  0001 C CNN "MFR"
+F 5 "RC0603FR-071KL" H -1600 3600 50  0001 C CNN "MPN"
+F 6 "" H -1600 3600 50  0001 C CNN "SPR"
+F 7 "" H -1600 3600 50  0001 C CNN "SPN"
+F 8 "-" H -1600 3600 50  0001 C CNN "SPURL"
+	1    2450 6850
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E345A08
+P 3300 7600
+AR Path="/59ED0E6A/5E345A08" Ref="#PWR?"  Part="1" 
+AR Path="/59ED3D7B/5E345A08" Ref="#PWR?"  Part="1" 
+AR Path="/59ED3D94/5E345A08" Ref="#PWR?"  Part="1" 
+AR Path="/59ED3DAD/5E345A08" Ref="#PWR?"  Part="1" 
+AR Path="/5E20A416/5E345A08" Ref="#PWR?"  Part="1" 
+AR Path="/5E345A08" Ref="#PWR026"  Part="1" 
+AR Path="/5E39C8D9/5E345A08" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3300 7350 50  0001 C CNN
+F 1 "GND" H 3300 7450 50  0000 C CNN
+F 2 "" H 3300 7600 50  0001 C CNN
+F 3 "" H 3300 7600 50  0001 C CNN
+	1    3300 7600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5E345A15
+P 3300 7450
+AR Path="/59ED0E6A/5E345A15" Ref="C?"  Part="1" 
+AR Path="/59ED3D7B/5E345A15" Ref="C?"  Part="1" 
+AR Path="/59ED3D94/5E345A15" Ref="C?"  Part="1" 
+AR Path="/59ED3DAD/5E345A15" Ref="C?"  Part="1" 
+AR Path="/5E20A416/5E345A15" Ref="C?"  Part="1" 
+AR Path="/5E345A15" Ref="C15"  Part="1" 
+AR Path="/5E39C8D9/5E345A15" Ref="C?"  Part="1" 
+F 0 "C?" H 3325 7550 50  0000 L CNN
+F 1 "0.1uF 16V X7R 0603" H 3400 7450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.05x0.95mm_HandSolder" H 3338 7300 50  0001 C CNN
+F 3 "" H 3300 7450 50  0001 C CNN
+F 4 "GRM31C5C1E104JA01L " H 3300 7450 60  0001 C CNN "Part"
+F 5 "490-1767-1-ND " H 3300 7450 60  0001 C CNN "Digikey"
+F 6 "CC0603KPX7R7BB104" H -1450 4100 50  0001 C CNN "MPN"
+F 7 "digikey" H -1450 4100 50  0001 C CNN "SPR"
+F 8 "490-1767-1-ND " H -1450 4100 50  0001 C CNN "SPN"
+F 9 "-" H -1450 4100 50  0001 C CNN "SPURL"
+F 10 "Yageo" H -550 4850 50  0001 C CNN "MFR"
+	1    3300 7450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3100 6050 3950 6050
+Wire Wire Line
+	3100 6500 3100 6050
+Wire Wire Line
+	3350 6500 3100 6500
+Wire Wire Line
+	3950 6050 3950 6600
+Wire Wire Line
+	3950 6650 3950 6600
+Connection ~ 3950 6600
+$Comp
+L Amplifier_Operational:AD8603 IC?
+U 1 1 5E345A27
+P 3650 6600
+AR Path="/59ED0E6A/5E345A27" Ref="IC?"  Part="1" 
+AR Path="/59ED3D7B/5E345A27" Ref="IC?"  Part="1" 
+AR Path="/59ED3D94/5E345A27" Ref="IC?"  Part="1" 
+AR Path="/59ED3DAD/5E345A27" Ref="IC?"  Part="1" 
+AR Path="/5E20A416/5E345A27" Ref="IC?"  Part="1" 
+AR Path="/5E345A27" Ref="IC3"  Part="1" 
+AR Path="/5E39C8D9/5E345A27" Ref="IC?"  Part="1" 
+F 0 "IC?" H 3994 6646 50  0000 L CNN
+F 1 "AD8603AUJZ-R2" H 3650 6800 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23-5" H 3650 6600 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8603_8607_8609.pdf" H 3650 6800 50  0001 C CNN
+F 4 "Analog Devices" H 750 3900 50  0001 C CNN "MFR"
+F 5 "AD8603AUJZ-R2" H 750 3900 50  0001 C CNN "MPN"
+F 6 "Mouser" H 750 3900 50  0001 C CNN "SPR"
+F 7 "AD8603AUJZ-R2" H 750 3900 50  0001 C CNN "SPN"
+F 8 "-" H 750 3900 50  0001 C CNN "SPURL"
+	1    3650 6600
+	1    0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E345A2D
+P 2450 7000
+AR Path="/59ED0E6A/5E345A2D" Ref="#PWR?"  Part="1" 
+AR Path="/59ED3D7B/5E345A2D" Ref="#PWR?"  Part="1" 
+AR Path="/59ED3D94/5E345A2D" Ref="#PWR?"  Part="1" 
+AR Path="/59ED3DAD/5E345A2D" Ref="#PWR?"  Part="1" 
+AR Path="/5E20A416/5E345A2D" Ref="#PWR?"  Part="1" 
+AR Path="/5E345A2D" Ref="#PWR021"  Part="1" 
+AR Path="/5E39C8D9/5E345A2D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2450 6750 50  0001 C CNN
+F 1 "GND" H 2450 6850 50  0000 C CNN
+F 2 "" H 2450 7000 50  0001 C CNN
+F 3 "" H 2450 7000 50  0001 C CNN
+	1    2450 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5E345A33
+P 3550 6300
+AR Path="/59ED0E6A/5E345A33" Ref="#PWR?"  Part="1" 
+AR Path="/59ED3D7B/5E345A33" Ref="#PWR?"  Part="1" 
+AR Path="/59ED3D94/5E345A33" Ref="#PWR?"  Part="1" 
+AR Path="/59ED3DAD/5E345A33" Ref="#PWR?"  Part="1" 
+AR Path="/5E20A416/5E345A33" Ref="#PWR?"  Part="1" 
+AR Path="/5E345A33" Ref="#PWR034"  Part="1" 
+AR Path="/5E39C8D9/5E345A33" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3550 6050 50  0001 C CNN
+F 1 "GND" H 3550 6150 50  0000 C CNN
+F 2 "" H 3550 6300 50  0001 C CNN
+F 3 "" H 3550 6300 50  0001 C CNN
+	1    3550 6300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7000 3350 6850 3350
+Wire Wire Line
+	6850 3350 6850 4000
+Wire Wire Line
+	6850 4000 6400 4000
+Wire Wire Line
+	3950 6650 6400 6650
+Wire Wire Line
+	6850 4800 6750 4800
+Wire Wire Line
+	6750 4800 6750 5250
+Wire Wire Line
+	6750 5250 6400 5250
+Wire Wire Line
+	6400 4000 6400 5250
+Connection ~ 6400 5250
+Wire Wire Line
+	6400 5250 6400 6650
+$Comp
+L power:+3.3V #PWR?
+U 1 1 5E3550F3
+P 3200 7100
+F 0 "#PWR?" H 3200 6950 50  0001 C CNN
+F 1 "+3.3V" H 3215 7273 50  0000 C CNN
+F 2 "" H 3200 7100 50  0001 C CNN
+F 3 "" H 3200 7100 50  0001 C CNN
+	1    3200 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 7100 3300 7100
+Wire Wire Line
+	3550 7100 3550 6900
+Wire Wire Line
+	3300 7300 3300 7100
+Connection ~ 3300 7100
+Wire Wire Line
+	3300 7100 3550 7100
+Wire Wire Line
+	3200 7100 2700 7100
+Wire Wire Line
+	2700 7100 2700 7250
+Wire Wire Line
+	2700 7250 2100 7250
+Wire Wire Line
+	2100 7250 2100 6100
+Wire Wire Line
+	2100 6100 2450 6100
+Wire Wire Line
+	2450 6100 2450 6400
+Connection ~ 3200 7100
+$EndSCHEMATC

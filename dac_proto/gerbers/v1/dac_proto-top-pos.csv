@@ -1,0 +1,13 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+C2,0.1uF 50V X7R 0603,C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,194,-92,90,top
+C4,0.1uF 50V X7R 0603,C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,194,-87,270,top
+C5,0.1uF 50V X7R 0603,C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,178,-88,270,top
+C6,1.0uF 25V X7R 0603,C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,186,-77,0,top
+C7,1.0uF 25V X7R 0603,C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,186,-83,180,top
+C8,0.1uF 50V X7R 0603,C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,178,-95,270,top
+C9,1.0uF 25V X7R 0603,C_0603_1608Metric_Pad1.05x0.95mm_HandSolder,197,-78,90,top
+IC1,AD5675RBRUZ,TSSOP-20_4.4x6.5mm_P0.65mm,202,-91,0,top
+IC2,ISO1541DR,SOIC-8_3.9x4.9mm_P1.27mm,174,-91,270,top
+IC3,LP5907MFX-3.3,SOT-23-5,186,-80,270,top
+J3,Conn_01x04_MountingPin,JST_PH_S4B-PH-SM4-TB_1x04-1MP_P2.00mm_Horizontal,173,-79,180,top
+R1,2,R_0603_1608Metric_Pad1.05x0.95mm_HandSolder,194,-77,180,top
